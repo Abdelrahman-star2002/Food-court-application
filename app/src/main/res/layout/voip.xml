@@ -1,0 +1,84 @@
+<!-- res/layout/activity_voip.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/oo"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".callActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <EditText
+                android:id="@+id/editTextIp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/bejjfateh"
+                android:hint="Enter IP Address"
+
+
+
+                />
+
+            <EditText
+                android:id="@+id/editTextPort"
+                android:layout_width="match_parent"
+                android:layout_below="@id/editTextIp"
+                android:layout_height="50dp"
+                android:background="@color/bejjfateh"
+                android:layout_marginTop="16dp"
+                android:hint="Enter Port Number"/>
+
+            <Button
+                android:id="@+id/buttonConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPort"
+                android:backgroundTint="@color/azra2"
+                android:layout_gravity="left"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="20dp"
+                android:text="Connect" />
+            <Button
+                android:id="@+id/buttondisConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPort"
+                android:backgroundTint="@color/azra2"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-48dp"
+                android:text="disconnect" />
+
+            <TextView
+                android:id="@+id/textViewLocalInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonConnect"
+                android:textColor="@color/azra2"
+                android:layout_marginTop="16dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

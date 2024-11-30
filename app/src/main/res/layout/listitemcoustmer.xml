@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_weight="1"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/azra2"
+    app:cardElevation="20dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+
+            <TextView
+                android:id="@+id/mitemquantity"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/mminus"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-319dp"
+                android:layout_marginTop="-26dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/bejjfateh"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/azra2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/mminus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:layout_marginStart="191dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="68dp"
+                android:layout_toStartOf="@+id/mplus"
+                android:backgroundTint="@color/azra2"
+                android:text="-"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/mplus"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mitemquantity"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="-7dp"
+                android:backgroundTint="@color/azra2"
+                android:minHeight="48dp"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-319dp"
+                android:layout_marginTop="-28dp"
+                android:layout_marginEnd="302dp"
+                android:layout_marginBottom="42dp"
+                android:text="price:"
+                android:textColor="@color/azra2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mprice"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-319dp"
+                android:layout_marginTop="-27dp"
+                android:layout_marginEnd="248dp"
+                android:layout_marginBottom="42dp"
+                android:text="0"
+                android:textColor="@color/azra2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mitemnamee"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mitemquantity"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-319dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginBottom="-58dp"
+                android:text="item name"
+                android:textColor="@color/azra2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

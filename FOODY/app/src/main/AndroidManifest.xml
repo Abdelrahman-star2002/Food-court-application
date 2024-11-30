@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FOODY"
+        tools:targetApi="31">
+        <activity
+            android:name=".amsaadcoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".friendscoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".laromacoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".arabiatacoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".tbscoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".prontocoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".mapcoustmer"
+            android:exported="false" />
+        <activity
+            android:name=".choose"
+            android:exported="false" />
+        <activity
+            android:name=".donecustomer"
+            android:exported="false" />
+        <activity
+            android:name=".checkout"
+            android:exported="false" />
+        <activity
+            android:name=".done"
+            android:exported="false" />
+        <activity
+            android:name=".tbs"
+            android:exported="false" />
+        <activity
+            android:name=".amsaad"
+            android:exported="false" />
+        <activity
+            android:name=".laroma"
+            android:exported="false" />
+        <activity
+            android:name=".friends"
+            android:exported="false" />
+        <activity
+            android:name=".pronto"
+            android:exported="false" />
+        <activity
+            android:name=".password"
+            android:exported="false" />
+        <activity
+            android:name=".arabiata"
+            android:exported="false" />
+        <activity
+            android:name=".map"
+            android:exported="false" />
+        <activity
+            android:name=".loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

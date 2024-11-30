@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".friends">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/amazonImage"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/white"
+            android:src="@drawable/friends"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="TODO"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/amazonImage">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber1"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded,DuplicateSpeakableTextCheck" />
+
+                    <Button
+                        android:id="@+id/plus1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded,DuplicateSpeakableTextCheck" />
+                    <TextView
+                        android:id="@+id/pricenumber1"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus1"
+                        android:layout_alignBottom="@+id/ordernumber1"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="american espresso"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto1"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/espresso"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber2"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus2"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber2"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus2"
+                        android:layout_alignBottom="@+id/ordernumber2"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="cappuccino"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto2"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/capu"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber3"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus3"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber3"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus3"
+                        android:layout_alignBottom="@+id/ordernumber3"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto3"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="hot choclate"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto3"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/choco"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber4"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus4"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber4"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus4"
+                        android:layout_alignBottom="@+id/ordernumber4"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto4"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="latte"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto4"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/latte"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber5"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus5"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber5"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus5"
+                        android:layout_alignBottom="@+id/ordernumber5"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto5"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="ice coffee"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto5"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/ice"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber6"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus6"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber6"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus6"
+                        android:layout_alignBottom="@+id/ordernumber6"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus6"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto6"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="lemon juice"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto6"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/lemon"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber7"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus7"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber7"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus7"
+                        android:layout_alignBottom="@+id/ordernumber7"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus7"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto7"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="water"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto7"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/water"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <TextView
+                        android:id="@+id/ordernumber8"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/minus8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-26dp"
+                        android:layout_marginEnd="63dp"
+                        android:layout_marginBottom="7dp"
+                        android:background="@color/bejjfateh"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/minus8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus8"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="113dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/plus8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="13dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                    <TextView
+                        android:id="@+id/pricenumber8"
+                        android:layout_width="150dp"
+                        android:layout_height="40dp"
+                        android:layout_alignBottom="@+id/priceplus8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginEnd="62dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/bejjfateh"
+                        android:text="price change"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/priceminus8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/plus8"
+                        android:layout_alignBottom="@+id/ordernumber8"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="197dp"
+                        android:layout_marginBottom="-62dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="-"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <Button
+                        android:id="@+id/priceplus8"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/ordernumber8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="-65dp"
+                        android:backgroundTint="@color/azra2"
+                        android:minHeight="48dp"
+                        android:text="+"
+                        android:textSize="25sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderphoto8"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="-319dp"
+                        android:layout_marginTop="-3dp"
+                        android:layout_marginEnd="-6dp"
+                        android:text="corassont"
+                        android:textColor="@color/azra2"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/orderphoto8"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/corasont"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="170dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="35dp">
+
+
+                    <TextView
+                        android:layout_width="284dp"
+                        android:id="@+id/test"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Delivery Allowed"
+                        android:textAlignment="center"
+                        android:textColor="@color/azra2"
+                        android:textSize="27sp"
+                        android:textStyle="bold" />
+                    <Button
+                        android:id="@+id/deliveryno"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="40dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="NO"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                    <Button
+                        android:id="@+id/deliveryyes"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-51dp"
+                        android:layout_marginLeft="-70dp"
+                        android:backgroundTint="@color/azra2"
+                        android:text="YES"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <Button
+                    android:id="@+id/ADD"
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:backgroundTint="@color/azra2"
+                    android:text="ADD TO SERVER"
+                    android:textSize="18sp"
+                    tools:ignore="HardcodedText,VisualLintButtonSize,DuplicateSpeakableTextCheck" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
